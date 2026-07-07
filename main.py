@@ -1,6 +1,7 @@
-def main():
-    print("Hello from sumi-fit!")
 
+from blueprints.fit_app_users import create_app
 
-if __name__ == "__main__":
-    main()
+app = create_app()
+
+if __name__ == '__main__':
+    app.run(debug=True)
